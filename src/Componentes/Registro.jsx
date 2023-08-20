@@ -4,19 +4,23 @@ import Alert from "./Alert";
 
 const Registro = ({alert, setAlert}) => {
     return(
-        <>
-        
+        <div className="registro">  
         <h1>Crea una cuenta</h1>
-        <div className="icon">
-        <Socialbutton icon="fa-brands fa-facebook"/>
-        <Socialbutton icon="fa-solid fa-envelope" />
-        <Socialbutton icon="fa-brands fa-linkedin" />
+        <div className="row">
+            <div className="col">
+        <Socialbutton icon="fa-brands fa-facebook fa-2x"/>
+        </div>
+        <div className="col">
+        <Socialbutton icon="fa-solid fa-envelope fa-2x" />
+        </div>
+        <div className="col">
+        <Socialbutton icon="fa-brands fa-linkedin fa-2x" />
+        </div>
         </div>
         <p>O regístrate aquí</p>
         <Formulario setAlert={setAlert}/>
         {alert.msg && <Alert msg={alert.msg} color= {alert.color}  />}
-        
-        </>
+        </div>
     );
 }
 

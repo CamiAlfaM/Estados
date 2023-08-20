@@ -41,7 +41,7 @@ const Formulario = ({ setAlert }) => {
   return (
     <>
       <form onSubmit={validarDatos}>
-        <div className="formu">
+        <div className="formu1">
           <input
             type="text"
             name="nombre"
@@ -50,7 +50,7 @@ const Formulario = ({ setAlert }) => {
             onChange={(e) => setName(e.target.value)}
           />
         </div>
-        <div className="formu">
+        <div className="formu2">
           <input
             type="text"
             name="email"
@@ -59,7 +59,7 @@ const Formulario = ({ setAlert }) => {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <div className="formu">
+        <div className="formu3">
           <input
             type="password"
             name="password"
@@ -68,7 +68,7 @@ const Formulario = ({ setAlert }) => {
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
-        <div className="formu">
+        <div className="formu4">
           <input
             type="password"
             name="Confirmpassword"
@@ -80,6 +80,7 @@ const Formulario = ({ setAlert }) => {
         <div>
           <button type="submit">Registrarse</button>
         </div>
+  
       </form>
     </>
   );
